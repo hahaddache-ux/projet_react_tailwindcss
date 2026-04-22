@@ -1,0 +1,23 @@
+@import "tailwindcss";
+@theme {
+  --color-ui-bg: var(--bg);
+  --color-ui-text: var(--text);
+  --color-ui-btn: var(--buttocolor);
+}
+
+:root{
+  --bg:#f8fafc;
+  --text:#0f172a;
+  --buttocolor: #2563eb;
+}
+
+[data-theme="midnight"]{
+  --bg:#020617;
+  --text:#f8fafc;
+  --buttocolor: #ca33be;
+}
+[data-theme="forest"]{
+  --bg:#25da8e;
+  --text:#f8fafc;
+  --buttocolor: #0a8a4a;
+}
