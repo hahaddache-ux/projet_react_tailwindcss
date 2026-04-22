@@ -1,16 +1,34 @@
-# React + Vite
+# 🎨 Tailwind v4 Themes
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Un projet React avec Tailwind CSS v4 qui démontre 
+le changement de thème dynamique via des variables CSS.
 
-Currently, two official plugins are available:
+## 🚀 Fonctionnalités
+   <img width="626" height="440" alt="image" src="https://github.com/user-attachments/assets/6158b8d0-e2b5-4b55-9f20-b5524956b770" />
+<img width="670" height="428" alt="image" src="https://github.com/user-attachments/assets/8cbb2876-432e-429f-af6e-d45de03d50f4" />
+<img width="687" height="474" alt="image" src="https://github.com/user-attachments/assets/caed3a32-d53b-4aae-9552-c05389ba39fa" />
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Changement de thème dynamique (Default / Midnight / Forest)
+- Variables CSS avec couleurs personnalisées Tailwind v4
+- Architecture basée sur les composants React
+- Design responsive
 
-## React Compiler
+## 🛠️ Technologies utilisées
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React
+- Tailwind CSS v4
+- Vite
 
-## Expanding the ESLint configuration
+## 📁 Structure du projet
+src/
+├── App.jsx        → composant principal + logique des thèmes
+├── Module.jsx     → composant de contenu
+└── index.css      → variables CSS + config Tailwind
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 💡 Comment ça fonctionne
+
+Le changement de thème utilise `useEffect` + `setAttribute`
+pour appliquer `data-theme` sur `<html>`,
+ensuite les variables CSS changent toutes les couleurs instantanément.
+
+## 📚 Inspiré de Tutoriel YouTube :https://www.youtube.com/watch?v=TaBYZtTWs-c
